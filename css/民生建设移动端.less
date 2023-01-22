@@ -1,0 +1,612 @@
+@import "common";
+@base-font:25px;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+#homepage {
+	height: 40rem / @base-font;
+	width: 100%;
+	// min-width: 1200rem / @base-font;
+	box-shadow: 0 2rem / @base-font 10rem / @base-font #999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: #FFF;
+}
+#head {
+	height: 40rem / @base-font;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		height: 40rem / @base-font;
+		// width: 32rem / @base-font;
+		width: 7%;
+		// background-color: #999999; 
+		img{
+			width: 90%;
+			height: 90%;
+			margin-top: 2rem / @base-font;
+		}
+	}
+	.inputsearch {
+		width: 20%;
+		height: 100%;
+		 // background-color: #FFCC99; 
+		line-height: 26rem / @base-font;
+		position: relative;
+	}
+	.fa-search {
+		position: absolute;
+		top: 15rem / @base-font;
+		left: 5rem / @base-font;
+		font-size: 8rem / @base-font;
+	}
+	.search {
+		font-size: 9rem / @base-font;
+		line-height: 12rem / @base-font;
+		color: #CCC;
+		height: 15rem / @base-font;
+		width: 100%;
+		padding: 4rem / @base-font;
+		padding-left: 15rem / @base-font;
+		box-sizing: border-box;
+		outline: none;
+		
+		
+		border-radius: 12rem / @base-font;
+	}
+	.navigation {
+		/* float: right; */
+		height: 40rem / @base-font;
+		// width: 400rem / @base-font;
+		width: 73%;
+		// background-color: aqua; 
+		ul {
+			margin: 0rem / @base-font;
+			padding: 0rem / @base-font;
+			list-style-type: none;
+			display: flex;
+			justify-content: space-around;
+			li {
+				
+				a {
+					color: #333;
+					display: block;
+					line-height: 22rem / @base-font;
+					padding-top: 8rem / @base-font;
+					padding-bottom: 8rem / @base-font;
+					margin-right: 15rem / @base-font;
+					margin-left: 15rem / @base-font;
+					text-decoration: none;
+					font-family: "微软雅黑";
+					font-size: 12rem / @base-font;
+					&:hover{
+						color: #999;
+						border-bottom-width: 2rem / @base-font;
+						border-bottom-style: solid;
+						border-bottom-color: #999;
+					}
+				}
+				.neat {
+					color: #999;
+					border-bottom-width: 2rem / @base-font;
+					border-bottom-style: solid;
+					border-bottom-color: #999;
+				}
+				
+			}
+		}
+	}
+}
+/* 背景图片开始 */
+#introduction {
+	background: url(../img/img9.jpg);
+	background-repeat: no-repeat;
+	height: 280rem / @base-font;
+	width: 100%;
+	background-position: center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	// min-width: 1200px;
+	.understand{
+		a {
+			height: 20rem / @base-font;
+			width: 60rem / @base-font;
+			position: relative;
+			left: 45%;
+			top: 240rem / @base-font;
+			right: 45%;
+			font-size: 12rem / @base-font;
+			line-height: 20rem / @base-font;
+			color: #FFF;
+			text-decoration: none;
+			border: 3rem / @base-font solid #FFF;
+			border-radius: 10rem / @base-font;
+			text-align: center;
+			font-family: "微软雅黑";
+			padding-right: 10rem / @base-font;
+			padding-left: 10rem / @base-font;
+			padding-top: 5rem / @base-font;
+			padding-bottom: 5rem / @base-font;
+			&:hover{
+				color: #d6ddde;
+			}
+		}
+	}
+}.zhongjian {
+	width: 85%;
+	height: 1320rem / @base-font;
+	 // background-color: pink; 
+	margin: 0 auto;
+	
+}
+.title{
+		width: 100%;
+		margin: 0 auto;
+		height: 51.5rem / @base-font;
+		background: url("../img/图案.png");
+		background-size: 100% 100%;
+		color: #0c63c1;
+		font-size: 14rem / @base-font;
+		text-align: center;
+		line-height: 55rem / @base-font;
+}
+.cur{
+	width: 100%;
+	height: 370rem / @base-font;
+}
+.container{
+			    width: 95%;
+			    display: flex;
+				margin-top: 2rem / @base-font;
+				margin-left:20rem / @base-font;
+			    // position: absolute;
+			    // left: 48%;
+			    // top: 100%;
+			    // transform: translate(-45%,-50%);
+			    color: #fff;
+			    font-weight: 300;
+			    /* 大写 */
+			    text-transform: uppercase;
+			    /* 设置视距 */
+			    perspective: 1300rem / @base-font;
+			}
+			input{
+			    display: none;
+			}
+			.labels{
+			    height: 250rem / @base-font;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: space-between;
+			}
+			.tab{
+			    width: 100rem / @base-font;
+			    height: 80rem / @base-font;
+			    line-height: 80rem / @base-font;
+			    text-align: center;
+			}
+			.tab:nth-child(1){
+			    background: url("../img/一纸民生A.jpg") no-repeat;
+			    background-size: 100% 100%;
+			    z-index: 2;
+			    position: relative;
+			}
+			.tab:nth-child(2){
+			    background: url("../img/一纸民生B.jpg") no-repeat;
+			    background-size: 100% 100%;
+			    z-index: 2;
+			    position: relative;
+			}
+			.tab:nth-child(3){
+			    background: url("../img/一纸民生C.jpg") no-repeat;
+			    background-size: 100% 100%;
+			    z-index: 2;
+			    position: relative;
+			}
+			.cube{
+			    position: relative;
+			    flex: 1;
+			    /* 开启3D */
+			    transform-style: preserve-3d;
+			    /* 设置过渡效果 */
+			    transition: transform 0.5s ease-in;
+			}
+			.tab-content{
+			    width: 95%;
+			    height: 230rem / @base-font;
+			    position: absolute;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-direction: column;
+			    background-color: red;
+			}
+			.tab-content h1{
+			    font-size: 28rem / @base-font;
+			    font-weight: 300;
+			}
+			.tab-content p{
+			    font-size: 14rem / @base-font;
+			    font-weight: 100;
+			}
+			.tab-content:nth-child(1){
+			    background: url("../img/一纸民生A.jpg") no-repeat;
+			    background-size: 100% 100%;
+			    transform: rotateX(-270deg) translateY(-115rem / @base-font);
+			    transform-origin: top center;
+			}
+			.tab-content:nth-child(2){
+			    background: url("../img/一纸民生B.jpg") no-repeat;
+			    background-size: 100% 100%;
+			    transform: translateZ(115rem / @base-font);
+			}
+			.tab-content:nth-child(3){
+			    background: url("../img/一纸民生C.jpg") no-repeat;
+			    background-size: 100% 100%;
+			    transform: rotateX(-90deg) translateY(115rem / @base-font);
+			    transform-origin: bottom center;
+			}
+			#tab_top:checked ~ .cube{
+			    transform: rotateX(-90deg);
+			}
+			#tab_middle:checked ~ .cube{
+			    transform: rotateX(0deg) translateY(10rem / @base-font);
+			}
+			#tab_bottom:checked ~ .cube{
+			    transform: rotateX(90deg);
+			}
+.title1{
+	width: 100%;
+	margin: 0 auto;
+	height: 51.5rem / @base-font;
+	background: url("../img/图案.png");
+	background-size: 100% 100%;
+	color: #0c63c1;
+	font-size: 14rem / @base-font;
+	text-align: center;
+	line-height: 55rem / @base-font;
+	margin-top: -100rem / @base-font;
+}
+/* 民生面对面 */
+.cons{
+    width: 100%;
+    height: 300rem / @base-font;
+    /* 弹性布局 */
+    display: flex;
+}
+.slide{
+    /* 相对定位 */
+    position: relative;
+    /* 自动放大占满剩余空间 */
+    flex: 1;
+    height: 300rem / @base-font;
+    overflow: hidden;
+    /* 过渡效果 */
+    transition: 1s;
+}
+.slide .image{
+    width: 100%;
+    height: 300rem / @base-font;
+/*    绝对定位，默认图片往左移出可视范围
+    position: absolute;
+    left: -140%;
+    top: -20%; */
+    /* 保持原有尺寸比例，裁切长边 */
+    background-size: 100% 100%;
+    /* 定位背景图像为正中间 */
+    background-position: center;
+    /* 过渡 */
+    transition: 1s;
+    /* 执行动画：图片进入动画 时长 线性的 停留在最后一帧 */
+    animation: imgIn 1.2s linear forwards;
+}
+/* 遮罩层 */
+.slide .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom,rgba(20,20,20,0.7),transparent);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+.slide .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 黑色标题 */
+.slide .content h1{
+    color: #3f3f3f;
+    font-size: 18rem / @base-font;
+    text-align: center;
+    text-shadow: 0 2rem / @base-font 2rem / @base-font #2f2f2f;
+    letter-spacing: 5rem / @base-font;
+    text-indent: 5rem / @base-font;
+    width: 100%;
+    height: 65rem / @base-font;
+    /* 默认隐藏 */
+    opacity: 0;
+    transition: 0.5s;
+}
+/* 黄色标题 */
+.slide .content h1::after{
+    /* 通过attr函数获取元素的data-title属性值 */
+    content: attr(data-title);
+    width: 100%;
+    /* 默认高度为零，隐藏 */
+    height: 0%;
+    color: #fff59d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.85s;
+}
+/* 接下来是鼠标悬停的样式改变 */
+.slide:hover .image{
+    /* 图片变大 */
+    transform: scale(1.1);
+}
+.slide:hover .overlay{
+    /* 降低遮罩层的不透明度 */
+    opacity: 0.4;
+}
+.slide:hover .content h1{
+    /* 黑色标题显现并下移 */
+    opacity: 1;
+    transform: translateY(60rem / @base-font);
+}
+.slide:hover .content h1::after{
+    /* 黄色标题显现 */
+    height: 100%;
+}
+
+/* 定义动画 */
+@keyframes imgIn {
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+.flex{
+	width:100%;
+	height: 160rem / @base-font;
+	margin: 0 auto;
+	// border: 1px solid red;
+	/* float: left; */
+}
+.flex img{
+	max-width: 100%; 
+	vertical-align: middle;
+}
+.flex ul{
+	display: flex;
+	justify-content: space-between;
+}
+.flex li{
+	width: 32%; 
+	margin-top: 5rem / @base-font;
+	list-style: none;
+}
+.text-desc h3{
+	font-size: 12rem / @base-font; 
+	text-align: center;
+	margin-top: -20rem / @base-font;
+	color: white;
+	/* margin: 5px 0 10px; */
+}
+.text-desc p{
+	color: white;
+	font-weight: 300; 
+	line-height: 25rem / @base-font;
+	font-size: 5rem / @base-font;
+	margin-bottom: 1rem / @base-font;
+}
+.btn{
+	display: inline-block;
+	padding: 2rem / @base-font 5rem / @base-font; 
+	font-size: 9rem / @base-font;
+	color: #fff; 
+	border: 2rem / @base-font solid #4d92d9; 
+	background-color: #4d92d9;
+	text-decoration: none; 
+	transition: 0.4s;
+}
+.btn:hover{
+	background-color: white; 
+	color: #4d92d9; 
+	transition: 0.4s;
+}
+.text-desc{
+	position: absolute;
+	left: 0;
+	top: 0; 
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	opacity: 0; 
+	width: 100%;
+	padding: 10px;
+}
+.port{
+	float: left; 
+	width: 100%; 
+	position: relative;
+	overflow: hidden; 
+	text-align: center;
+}
+.port .text-desc{
+	opacity: 0.9; 
+	top: -100%; 
+	transition: 0.5s; 
+	color: #000;
+	padding: 25px 10px 10px;
+}
+.port img{
+	transition: 0.5s;
+}
+.port:hover img{
+	transform: scale(1.2);
+}
+
+.port:hover .text-desc{
+	top: 0;
+}
+.port .text-desc{
+	top: 50%; 
+	left: 50%; 
+	width: 0; 
+	height: 0; 
+	overflow: hidden; 
+	padding: 0;
+}
+.port:hover .text-desc{
+	width: 100%; 
+	top: 0; 
+	left: 0; 
+	height: 100%; 
+	padding: 25rem / @base-font 10rem / @base-font 10rem / @base-font;
+}
+.push{
+	width: 155rem / @base-font;
+	height: 40rem / @base-font;
+	border: 1rem / @base-font solid rgba(0,0,0,0.2);
+	margin: 10rem / @base-font auto;
+	font-size: 12.5rem / @base-font;
+	text-align: center;
+	line-height: 40rem / @base-font;
+	color:rgba(0,0,0,0.4);
+}
+.push:hover{
+	background: #0c63c1;
+	color: white;
+	cursor: pointer;
+}
+.hot{
+	width: 100%;
+	height: 310rem / @base-font;
+	display: flex;
+	margin-top: 5rem / @base-font;
+}
+.hot ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hot li{
+	display: flex;
+}
+.photo{
+	width: 175rem / @base-font;
+	height: 90rem / @base-font;
+}
+.photo img{
+	width: 175rem / @base-font;
+	height: 90rem / @base-font;
+}
+.font{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.font h1{
+	font-size: 10rem / @base-font;
+	padding-left: 10rem / @base-font;
+}
+.font p{
+	font-size: 5rem / @base-font;
+	padding-left: 10rem / @base-font;
+	line-height: 15rem / @base-font;
+}
+/* 底部开始 */
+.float{
+		width: 100%;
+		height: 175rem / @base-font;
+		background-color: #333333;
+		color: #FFFFFF;
+		text-align: center;
+	}
+	.wei_font{
+		width: 85%;
+		height:80rem / @base-font;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		border-bottom:1rem / @base-font solid #d0d0d0;
+	
+	ul{
+		width: 25%;
+		height: 75rem / @base-font;
+		font-size: 6rem / @base-font;
+		li{
+			&:nth-child(1){
+				margin-top: 20rem / @base-font;
+			}
+			&:nth-child(2){
+				margin-top:10rem / @base-font;
+			}
+			&:nth-child(3){
+				margin-top:10rem / @base-font;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	
+}
+.wei_end{
+		width: 60%;
+		height: 65rem / @base-font;
+		margin: 0 auto;
+		// background-color: pink;
+		display: flex;
+	}
+.wei_logo{
+	width: 10%;
+	// background-color: #0000ff;
+	
+	img{
+		width: 18rem / @base-font;
+		height: 18rem / @base-font;
+		// background-color: green;
+	}
+}
+.wei_font2{
+	font-size:3rem / @base-font;
+	width: 90%;
+	height: 65rem / @base-font;
+	// background-color: #00a6bc;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	ul{
+		height: 33%;
+		line-height: 10rem / @base-font;
+		// background-color: #ff55ff;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		    white-space: nowrap;
+	}
+}
+.wei_font3{
+	font-size: 5rem / @base-font;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	    white-space: nowrap;
+}

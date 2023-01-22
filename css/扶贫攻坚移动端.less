@@ -1,0 +1,408 @@
+@import "common";
+@base-font:25px;
+ul li{
+	list-style-type: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#homepage {
+	height: 40rem / @base-font;
+	width: 100%;
+	// min-width: 1200rem / @base-font;
+	box-shadow: 0 2rem / @base-font 10rem / @base-font #999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: #FFF;
+}
+#head {
+	height: 40rem / @base-font;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		height: 40rem / @base-font;
+		// width: 32rem / @base-font;
+		width: 7%;
+		// background-color: #999999; 
+		img{
+			width: 90%;
+			height: 90%;
+			margin-top: 2rem / @base-font;
+		}
+	}
+	.inputsearch {
+		width: 20%;
+		height: 100%;
+		 // background-color: #FFCC99; 
+		line-height: 26rem / @base-font;
+		position: relative;
+	}
+	.fa-search {
+		position: absolute;
+		top: 15rem / @base-font;
+		left: 5rem / @base-font;
+		font-size: 8rem / @base-font;
+	}
+	.search {
+		font-size: 9rem / @base-font;
+		line-height: 12rem / @base-font;
+		color: #CCC;
+		height: 15rem / @base-font;
+		width: 100%;
+		padding: 4rem / @base-font;
+		padding-left: 15rem / @base-font;
+		box-sizing: border-box;
+		outline: none;
+		
+		
+		border-radius: 12rem / @base-font;
+	}
+	.navigation {
+		/* float: right; */
+		height: 40rem / @base-font;
+		// width: 400rem / @base-font;
+		width: 100%;
+		// background-color: aqua; 
+		ul {
+			margin: 0rem / @base-font;
+			padding: 0rem / @base-font;
+			list-style-type: none;
+			display: flex;
+			justify-content: space-around;
+			li {
+				
+				a {
+					color: #333;
+					display: block;
+					line-height: 22rem / @base-font;
+					padding-top: 8rem / @base-font;
+					padding-bottom: 8rem / @base-font;
+					margin-right: 15rem / @base-font;
+					margin-left: 15rem / @base-font;
+					text-decoration: none;
+					font-family: "微软雅黑";
+					font-size: 12rem / @base-font;
+					&:hover{
+						color: #999;
+						border-bottom-width: 2rem / @base-font;
+						border-bottom-style: solid;
+						border-bottom-color: #999;
+					}
+				}
+				.neat {
+					color: #999;
+					border-bottom-width: 2rem / @base-font;
+					border-bottom-style: solid;
+					border-bottom-color: #999;
+				}
+				
+			}
+		}
+	}
+}
+/* 背景图片开始 */
+#introduction {
+	background: url(../img/img9.jpg);
+	background-repeat: no-repeat;
+	height: 280rem / @base-font;
+	width: 100%;
+	background-position: center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	// min-width: 1200px;
+	.understand{
+		a {
+			height: 20rem / @base-font;
+			width: 60rem / @base-font;
+			position: relative;
+			left: 45%;
+			top: 240rem / @base-font;
+			right: 45%;
+			font-size: 12rem / @base-font;
+			line-height: 20rem / @base-font;
+			color: #FFF;
+			text-decoration: none;
+			border: 3rem / @base-font solid #FFF;
+			border-radius: 10rem / @base-font;
+			text-align: center;
+			font-family: "微软雅黑";
+			padding-right: 10rem / @base-font;
+			padding-left: 10rem / @base-font;
+			padding-top: 5rem / @base-font;
+			padding-bottom: 5rem / @base-font;
+			&:hover{
+				color: #d6ddde;
+			}
+		}
+	}
+}
+
+.content{
+	width: 100%;
+/* 	background-color: pink; */
+	margin: 0 auto;
+	.lun{
+		display: flex;
+		.box{width:60%;height: 11rem;;overflow: hidden;position: relative;
+		.box-1 ul li{width: 100%;height: 11rem;position: relative;overflow: hidden;
+		img{display:block;width: 100%; height: 11rem;}
+		h2{position: absolute;left: 0;bottom: 0;height: 40px;width:100%;
+		background: rgba(125,125,120,.4);text-indent: 2em;
+						padding-right:500px ;font-size: 15px;line-height: 40px; overflow: hidden;
+						white-space: nowrap;font-weight: normal;color: ghostwhite}}
+		.box-2{position: absolute;right: 10px;bottom: 14px;
+		ul li{float:left;width: 12px;height: 12px;overflow: hidden; margin: 0 5px; border-radius: 50%;
+					position:relative;	background: rgba(0,0,0,0.5);text-indent: 100px;cursor: pointer;}
+		.on{background: rgba(255,255,255,0.6);}}
+		.box-3 span{position: absolute;color: white;background: rgba(125,125,120,.3);width: 50px;height: 80px;
+						top:50%; font-family: "宋体";line-height: 80px;font-size:60px;margin-top: -40px;
+						text-align: center;cursor: pointer;
+			.prev{left: 10px;}
+		.next{right: 10px;}
+		 span::selection{background: transparent;}
+		span &:hover{background: rgba(125,125,120,.8);}}
+		}
+		.list {
+			width: 40%;
+		li{
+			width: 100%;
+			position: relative;
+			font-size:10rem / @base-font;
+			line-height:1.375rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			&:hover{text-decoration: underline;
+	color: red;}}
+		}
+	}
+	.title{
+		width:100%;
+		height:2rem;
+		line-height: 36px;
+		text-align:center;
+		position:relative;
+		font-size: 1.3rem;
+		margin-top:50px ;
+		&:hover{
+			color: #c0c3d0;
+			text-decoration: underline;
+		}
+	}
+}
+.container {
+	width: 100%;
+	position: relative;
+	margin-top: 1rem;
+	.box2{
+		margin: 0 auto;
+		
+		position: relative;
+		width: 75%;
+		height: 14rem;
+		box-shadow: 11px 10px 10px rgba(140, 136, 139, 0.5);
+		.tu img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transition: 1.2s;}
+			 &:hover img{
+				opacity: 0.2;
+			}
+			&:hover .p p{
+				opacity:1;
+			}
+			
+			.p {
+				position: absolute;
+				top:50px;
+				width: 100%;
+				height: 80%;
+				overflow: hidden;
+				padding: 15px;
+				box-sizing: border-box;
+				p {
+					font-size: 0.8rem;
+					opacity: 0;
+					line-height: 30px;
+					transition:1.2s;
+					padding: 2rem;
+					letter-spacing: 5rem / @base-font;
+					overflow: hidden;
+				}
+				
+			}
+	}
+	
+}
+.shou{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:70%;
+ul{ width: 100%;
+    height:400px;
+    overflow: hidden;
+    transition: all 0.3s;
+	display: flex;
+	}
+	&:hover li{
+		width: 2rem;
+	}
+	li{
+	position: relative;
+	list-style-type: none;
+	width: 8rem;
+	height: 3rem;
+	transition: all .5s;	
+	
+		&:hover p{
+			font-size:15px;
+		}
+		&:hover{
+			width: 20rem;
+		}
+		 img{
+			width: 23rem;
+			height: 10rem;
+			}
+		p{
+			height: 30px;
+			width: 100%;
+			position: relative;
+			top:-33px;
+			line-height: 30px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 700;
+			color: #fff;
+			background-color: rgba(0, 0, 0, .3);
+			transition: all 0.3s;
+			overflow: hidden;
+		}
+		}
+}
+
+.box3{
+	a{
+		width: 80%;
+		height: 10rem;
+		display: flex;
+		background-color: aliceblue ;
+		margin: 0 auto;
+	}
+	.zhu{
+		margin: 35px;
+		img{
+			width:70%;
+			height: 10rem;
+		}
+		.font{
+			margin:30px;
+			width: 30%;
+			height: 8rem;
+			overflow: hidden;
+		}
+		h1{
+			font-size: 0.6rem;
+			&:hover{
+				color: red;
+				text-decoration: underline;
+				transition: 0.4s;
+			}}
+			p{
+				margin-top: 30px;
+				font-size: 0.4rem;
+				letter-spacing: 0.1rem;
+				line-height: 0.5rem;
+			}
+		
+	}
+}
+
+
+
+
+
+
+.float{
+		width: 100%;
+		height: 175rem / @base-font;
+		background-color: #333333;
+		color: #FFFFFF;
+		text-align: center;
+	}
+	.wei_font{
+		width: 85%;
+		height:80rem / @base-font;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		border-bottom:1rem / @base-font solid #d0d0d0;
+	
+	ul{
+		width: 25%;
+		height: 75rem / @base-font;
+		font-size: 6rem / @base-font;
+		li{
+			&:nth-child(1){
+				margin-top: 20rem / @base-font;
+			}
+			&:nth-child(2){
+				margin-top:10rem / @base-font;
+			}
+			&:nth-child(3){
+				margin-top:10rem / @base-font;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	
+}
+.wei_end{
+		width: 60%;
+		height: 65rem / @base-font;
+		margin: 0 auto;
+		// background-color: pink;
+		display: flex;
+	}
+.wei_logo{
+	width: 10%;
+	// background-color: #0000ff;
+	
+	img{
+		width: 18rem / @base-font;
+		height: 18rem / @base-font;
+		// background-color: green;
+	}
+}
+.wei_font2{
+	font-size:3rem / @base-font;
+	width: 90%;
+	height: 65rem / @base-font;
+	// background-color: #00a6bc;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	ul{
+		height: 33%;
+		line-height: 10rem / @base-font;
+		// background-color: #ff55ff;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		    white-space: nowrap;
+	}
+}
+.wei_font3{
+	font-size: 5rem / @base-font;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	    white-space: nowrap;
+}

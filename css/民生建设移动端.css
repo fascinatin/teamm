@@ -1,0 +1,632 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 19.2px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 21.2px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+#homepage {
+  height: 1.6rem;
+  width: 100%;
+  box-shadow: 0 0.08rem 0.4rem #999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #FFF;
+}
+#head {
+  height: 1.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#head .logo {
+  height: 1.6rem;
+  width: 7%;
+}
+#head .logo img {
+  width: 90%;
+  height: 90%;
+  margin-top: 0.08rem;
+}
+#head .inputsearch {
+  width: 20%;
+  height: 100%;
+  line-height: 1.04rem;
+  position: relative;
+}
+#head .fa-search {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.2rem;
+  font-size: 0.32rem;
+}
+#head .search {
+  font-size: 0.36rem;
+  line-height: 0.48rem;
+  color: #CCC;
+  height: 0.6rem;
+  width: 100%;
+  padding: 0.16rem;
+  padding-left: 0.6rem;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0.48rem;
+}
+#head .navigation {
+  /* float: right; */
+  height: 1.6rem;
+  width: 73%;
+}
+#head .navigation ul {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+#head .navigation ul li a {
+  color: #333;
+  display: block;
+  line-height: 0.88rem;
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
+  text-decoration: none;
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+}
+#head .navigation ul li a:hover {
+  color: #999;
+  border-bottom-width: 0.08rem;
+  border-bottom-style: solid;
+  border-bottom-color: #999;
+}
+#head .navigation ul li .neat {
+  color: #999;
+  border-bottom-width: 0.08rem;
+  border-bottom-style: solid;
+  border-bottom-color: #999;
+}
+/* 背景图片开始 */
+#introduction {
+  background: url(../img/img9.jpg);
+  background-repeat: no-repeat;
+  height: 11.2rem;
+  width: 100%;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+#introduction .understand a {
+  height: 0.8rem;
+  width: 2.4rem;
+  position: relative;
+  left: 45%;
+  top: 9.6rem;
+  right: 45%;
+  font-size: 0.48rem;
+  line-height: 0.8rem;
+  color: #FFF;
+  text-decoration: none;
+  border: 0.12rem solid #FFF;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-family: "微软雅黑";
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+#introduction .understand a:hover {
+  color: #d6ddde;
+}
+.zhongjian {
+  width: 85%;
+  height: 52.8rem;
+  margin: 0 auto;
+}
+.title {
+  width: 100%;
+  margin: 0 auto;
+  height: 2.06rem;
+  background: url("../img/图案.png");
+  background-size: 100% 100%;
+  color: #0c63c1;
+  font-size: 0.56rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+.cur {
+  width: 100%;
+  height: 14.8rem;
+}
+.container {
+  width: 95%;
+  display: flex;
+  margin-top: 0.08rem;
+  margin-left: 0.8rem;
+  color: #fff;
+  font-weight: 300;
+  /* 大写 */
+  text-transform: uppercase;
+  /* 设置视距 */
+  perspective: 52rem;
+}
+input {
+  display: none;
+}
+.labels {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tab {
+  width: 4rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+.tab:nth-child(1) {
+  background: url("../img/一纸民生A.jpg") no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+  position: relative;
+}
+.tab:nth-child(2) {
+  background: url("../img/一纸民生B.jpg") no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+  position: relative;
+}
+.tab:nth-child(3) {
+  background: url("../img/一纸民生C.jpg") no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+  position: relative;
+}
+.cube {
+  position: relative;
+  flex: 1;
+  /* 开启3D */
+  transform-style: preserve-3d;
+  /* 设置过渡效果 */
+  transition: transform 0.5s ease-in;
+}
+.tab-content {
+  width: 95%;
+  height: 9.2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+}
+.tab-content h1 {
+  font-size: 1.12rem;
+  font-weight: 300;
+}
+.tab-content p {
+  font-size: 0.56rem;
+  font-weight: 100;
+}
+.tab-content:nth-child(1) {
+  background: url("../img/一纸民生A.jpg") no-repeat;
+  background-size: 100% 100%;
+  transform: rotateX(-270deg) translateY(-4.6rem);
+  transform-origin: top center;
+}
+.tab-content:nth-child(2) {
+  background: url("../img/一纸民生B.jpg") no-repeat;
+  background-size: 100% 100%;
+  transform: translateZ(4.6rem);
+}
+.tab-content:nth-child(3) {
+  background: url("../img/一纸民生C.jpg") no-repeat;
+  background-size: 100% 100%;
+  transform: rotateX(-90deg) translateY(4.6rem);
+  transform-origin: bottom center;
+}
+#tab_top:checked ~ .cube {
+  transform: rotateX(-90deg);
+}
+#tab_middle:checked ~ .cube {
+  transform: rotateX(0deg) translateY(0.4rem);
+}
+#tab_bottom:checked ~ .cube {
+  transform: rotateX(90deg);
+}
+.title1 {
+  width: 100%;
+  margin: 0 auto;
+  height: 2.06rem;
+  background: url("../img/图案.png");
+  background-size: 100% 100%;
+  color: #0c63c1;
+  font-size: 0.56rem;
+  text-align: center;
+  line-height: 2.2rem;
+  margin-top: -4rem;
+}
+/* 民生面对面 */
+.cons {
+  width: 100%;
+  height: 12rem;
+  /* 弹性布局 */
+  display: flex;
+}
+.slide {
+  /* 相对定位 */
+  position: relative;
+  /* 自动放大占满剩余空间 */
+  flex: 1;
+  height: 12rem;
+  overflow: hidden;
+  /* 过渡效果 */
+  transition: 1s;
+}
+.slide .image {
+  width: 100%;
+  height: 12rem;
+  /*    绝对定位，默认图片往左移出可视范围
+    position: absolute;
+    left: -140%;
+    top: -20%; */
+  /* 保持原有尺寸比例，裁切长边 */
+  background-size: 100% 100%;
+  /* 定位背景图像为正中间 */
+  background-position: center;
+  /* 过渡 */
+  transition: 1s;
+  /* 执行动画：图片进入动画 时长 线性的 停留在最后一帧 */
+  animation: imgIn 1.2s linear forwards;
+}
+/* 遮罩层 */
+.slide .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.7), transparent);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+.slide .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* 黑色标题 */
+.slide .content h1 {
+  color: #3f3f3f;
+  font-size: 0.72rem;
+  text-align: center;
+  text-shadow: 0 0.08rem 0.08rem #2f2f2f;
+  letter-spacing: 0.2rem;
+  text-indent: 0.2rem;
+  width: 100%;
+  height: 2.6rem;
+  /* 默认隐藏 */
+  opacity: 0;
+  transition: 0.5s;
+}
+/* 黄色标题 */
+.slide .content h1::after {
+  /* 通过attr函数获取元素的data-title属性值 */
+  content: attr(data-title);
+  width: 100%;
+  /* 默认高度为零，隐藏 */
+  height: 0%;
+  color: #fff59d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transition: 0.85s;
+}
+/* 接下来是鼠标悬停的样式改变 */
+.slide:hover .image {
+  /* 图片变大 */
+  transform: scale(1.1);
+}
+.slide:hover .overlay {
+  /* 降低遮罩层的不透明度 */
+  opacity: 0.4;
+}
+.slide:hover .content h1 {
+  /* 黑色标题显现并下移 */
+  opacity: 1;
+  transform: translateY(2.4rem);
+}
+.slide:hover .content h1::after {
+  /* 黄色标题显现 */
+  height: 100%;
+}
+/* 定义动画 */
+@keyframes imgIn {
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+.flex {
+  width: 100%;
+  height: 6.4rem;
+  margin: 0 auto;
+  /* float: left; */
+}
+.flex img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.flex ul {
+  display: flex;
+  justify-content: space-between;
+}
+.flex li {
+  width: 32%;
+  margin-top: 0.2rem;
+  list-style: none;
+}
+.text-desc h3 {
+  font-size: 0.48rem;
+  text-align: center;
+  margin-top: -0.8rem;
+  color: white;
+  /* margin: 5px 0 10px; */
+}
+.text-desc p {
+  color: white;
+  font-weight: 300;
+  line-height: 1rem;
+  font-size: 0.2rem;
+  margin-bottom: 0.04rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.08rem 0.2rem;
+  font-size: 0.36rem;
+  color: #fff;
+  border: 0.08rem solid #4d92d9;
+  background-color: #4d92d9;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: white;
+  color: #4d92d9;
+  transition: 0.4s;
+}
+.text-desc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  padding: 10px;
+}
+.port {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.port .text-desc {
+  opacity: 0.9;
+  top: -100%;
+  transition: 0.5s;
+  color: #000;
+  padding: 25px 10px 10px;
+}
+.port img {
+  transition: 0.5s;
+}
+.port:hover img {
+  transform: scale(1.2);
+}
+.port:hover .text-desc {
+  top: 0;
+}
+.port .text-desc {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.port:hover .text-desc {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem 0.4rem 0.4rem;
+}
+.push {
+  width: 6.2rem;
+  height: 1.6rem;
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  margin: 0.4rem auto;
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 1.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+.push:hover {
+  background: #0c63c1;
+  color: white;
+  cursor: pointer;
+}
+.hot {
+  width: 100%;
+  height: 12.4rem;
+  display: flex;
+  margin-top: 0.2rem;
+}
+.hot ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hot li {
+  display: flex;
+}
+.photo {
+  width: 7rem;
+  height: 3.6rem;
+}
+.photo img {
+  width: 7rem;
+  height: 3.6rem;
+}
+.font {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.font h1 {
+  font-size: 0.4rem;
+  padding-left: 0.4rem;
+}
+.font p {
+  font-size: 0.2rem;
+  padding-left: 0.4rem;
+  line-height: 0.6rem;
+}
+/* 底部开始 */
+.float {
+  width: 100%;
+  height: 7rem;
+  background-color: #333333;
+  color: #FFFFFF;
+  text-align: center;
+}
+.wei_font {
+  width: 85%;
+  height: 3.2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.04rem solid #d0d0d0;
+}
+.wei_font ul {
+  width: 25%;
+  height: 3rem;
+  font-size: 0.24rem;
+}
+.wei_font ul li:nth-child(1) {
+  margin-top: 0.8rem;
+}
+.wei_font ul li:nth-child(2) {
+  margin-top: 0.4rem;
+}
+.wei_font ul li:nth-child(3) {
+  margin-top: 0.4rem;
+}
+.wei_font ul li:hover {
+  cursor: pointer;
+}
+.wei_end {
+  width: 60%;
+  height: 2.6rem;
+  margin: 0 auto;
+  display: flex;
+}
+.wei_logo {
+  width: 10%;
+}
+.wei_logo img {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+.wei_font2 {
+  font-size: 0.12rem;
+  width: 90%;
+  height: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wei_font2 ul {
+  height: 33%;
+  line-height: 0.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wei_font3 {
+  font-size: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

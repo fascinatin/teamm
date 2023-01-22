@@ -1,0 +1,338 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img:hover {
+  cursor: pointer;
+}
+.bbbbox {
+  width: 100%;
+}
+.bbbbox .end {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.bbbbox .end .title {
+  height: 1.2rem;
+  line-height: 0.2rem;
+  text-align: center;
+}
+.bbbbox .end .title span {
+  height: 0.2rem;
+  font-size: 0.6em;
+  color: aquamarine;
+  position: relative;
+  top: 2px;
+}
+.bbbbox .end .title img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.bbbbox .end .tu2:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.bbbbox .end .shijian {
+  width: 100%;
+}
+.bbbbox .end .shijian #abc li {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.bbbbox .end .shijian #abc li .a1 {
+  width: 45%;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.bbbbox .end .shijian #abc li .a1 img {
+  width: 90%;
+  height: 90%;
+}
+.bbbbox .end .shijian #abc li .a2 {
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.08rem;
+  box-shadow: 3px 2px 2px 3px aliceblue;
+}
+.bbbbox .end .shijian #abc li .a2 h3 {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+.bbbbox .end .shijian #abc li .a2 h3:hover {
+  color: red;
+  font-size: 35px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bbbbox .end .shijian #abc li .a2 p {
+  font-size: 20px;
+}
+.bbbbox .end .shijian #abc li .b1 {
+  width: 50%;
+  float: left;
+  margin-right: 0.16rem;
+  box-shadow: 3px 2px 2px 3px aliceblue;
+}
+.bbbbox .end .shijian #abc li .b1 h3 {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.bbbbox .end .shijian #abc li .b1 h3:hover {
+  color: red;
+  font-size: 35px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bbbbox .end .shijian #abc li .b1 p {
+  font-size: 20px;
+}
+.bbbbox .end .shijian #abc li .b2 {
+  width: 45%;
+  float: right;
+  border-radius: 0.08rem;
+  margin-top: 0.4rem;
+}
+.bbbbox .end .shijian #abc li .b2 img {
+  height: 90%;
+}
+.bbbbox .end .shijian #abc li .c1 {
+  width: 40%;
+  height: 0.88rem;
+  float: left;
+  margin-right: 0.16rem;
+  margin-top: 0.4rem;
+}
+.bbbbox .end .shijian #abc li .c2 {
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.08rem;
+  box-shadow: 3px 2px 2px 3px aliceblue;
+}
+.bbbbox .end .shijian #abc li .c2 h3 {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.bbbbox .end .shijian #abc li .c2 h3:hover {
+  color: red;
+  font-size: 35px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bbbbox .end .shijian #abc li .c2 p {
+  font-size: 20px;
+}
+.bbbbox .end .guanggao {
+  width: 100%;
+}
+.bbbbox .end .guanggao .wen {
+  text-align: center;
+  margin-bottom: 0.08rem;
+}
+.bbbbox .end .guanggao .wen span {
+  text-decoration: underline;
+  font-size: 0.6rem;
+}
+.bbbbox .end .guanggao .tu1 {
+  width: 0.8rem;
+  height: 0.8rem;
+  float: right;
+  position: relative;
+  bottom: 3rem;
+  right: 2rem;
+}
+.bbbbox .end .guanggao .tu1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.bbbbox .end .guanggao .advertising {
+  margin-top: 0.6rem;
+}
+.bbbbox .end .guanggao .advertising ul {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.bbbbox .end .guanggao .advertising li {
+  width: 30%;
+  text-align: center;
+  border-bottom: 0.04rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  box-shadow: 2px 2px 2px 2px aliceblue;
+}
+.bbbbox .end .guanggao .advertising li:hover {
+  transform: scale(1.08);
+  transition: 1s;
+  box-shadow: 3px 3px 3px 3px beige;
+}
+.bbbbox .end .guanggao .advertising li img {
+  width: 80%;
+  margin-bottom: 0.04rem;
+  align-self: center;
+}
+.bbbbox .float {
+  background-color: #333333;
+  width: 100%;
+  height: 16rm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bbbbox .float .float_two {
+  width: 100%;
+  height: 16rem;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  bottom: 3rem;
+}
+.bbbbox .float .float_two .wei_font {
+  width: 85%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #d0d0d0;
+}
+.bbbbox .float .float_two .wei_font ul {
+  width: 25%;
+  font-size: 0.04rem;
+}
+.bbbbox .float .float_two .wei_font ul li:hover {
+  cursor: pointer;
+}
+.bbbbox .float .float_two .wei_font ul li:nth-child(1) {
+  margin-top: 40px;
+}
+.bbbbox .float .float_two .wei_font ul li:nth-child(2) {
+  margin-top: 20px;
+}
+.bbbbox .float .float_two .wei_font ul li:nth-child(3) {
+  margin-top: 20px;
+}
+.bbbbox .float .float_two .wei_end {
+  width: 80%;
+  margin: auto;
+}
+.bbbbox .float .float_two .wei_end .wei_logo {
+  width: 2.8rem;
+  height: 2.8rem;
+  float: left;
+  background: url(../images/logo.png);
+  background-size: 87px;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 ul {
+  margin-top: 0.08rem;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 ul:nth-child(2) {
+  margin-top: -0.4rem;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 ul:nth-child(3) {
+  margin-top: -0.4rem;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 ul:first-child li:nth-child(2):hover {
+  color: #FF0000;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 ul:first-child li:nth-child(3):hover {
+  color: #FF0000;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 ul:nth-child(3) li:nth-child(3):hover {
+  color: #FF0000;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 li {
+  margin-left: 20px;
+  font-size: 12px;
+}
+.bbbbox .float .float_two .wei_end .wei_font2 li:nth-child(3) {
+  float: none;
+}
+.bbbbox .float .float_two .wei_font3 {
+  color: #FFFFFF;
+  font-size: 0.04rem;
+}
+.bbbbox .float .float_two .wei_font3 a {
+  color: #FFFFFF;
+}
+.bbbbox .float .float_two .wei_font3 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

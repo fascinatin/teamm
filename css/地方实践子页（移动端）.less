@@ -1,0 +1,432 @@
+@import "common";
+@base-font:25px;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+#homepage {
+	height: 40rem / @base-font;
+	width: 100%;
+	// min-width: 1200rem / @base-font;
+	box-shadow: 0 2rem / @base-font 10rem / @base-font #999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: #FFF;
+}
+#head {
+	height: 40rem / @base-font;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		height: 40rem / @base-font;
+		// width: 32rem / @base-font;
+		width: 7%;
+		// background-color: #999999; 
+		img{
+			width: 90%;
+			height: 90%;
+			margin-top: 2rem / @base-font;
+		}
+	}
+	.inputsearch {
+		width: 20%;
+		height: 100%;
+		 // background-color: #FFCC99; 
+		line-height: 26rem / @base-font;
+		position: relative;
+	}
+	.fa-search {
+		position: absolute;
+		top: 15rem / @base-font;
+		left: 5rem / @base-font;
+		font-size: 8rem / @base-font;
+	}
+	.search {
+		font-size: 9rem / @base-font;
+		line-height: 12rem / @base-font;
+		color: #CCC;
+		height: 15rem / @base-font;
+		width: 100%;
+		padding: 4rem / @base-font;
+		padding-left: 15rem / @base-font;
+		box-sizing: border-box;
+		outline: none;
+		
+		
+		border-radius: 12rem / @base-font;
+	}
+	.navigation {
+		/* float: right; */
+		height: 40rem / @base-font;
+		// width: 400rem / @base-font;
+		width: 73%;
+		// background-color: aqua; 
+		ul {
+			margin: 0rem / @base-font;
+			padding: 0rem / @base-font;
+			list-style-type: none;
+			display: flex;
+			justify-content: space-around;
+			li {
+				
+				a {
+					color: #333;
+					display: block;
+					line-height: 22rem / @base-font;
+					padding-top: 8rem / @base-font;
+					padding-bottom: 8rem / @base-font;
+					margin-right: 15rem / @base-font;
+					margin-left: 15rem / @base-font;
+					text-decoration: none;
+					font-family: "微软雅黑";
+					font-size: 12rem / @base-font;
+					&:hover{
+						color: #999;
+						border-bottom-width: 2rem / @base-font;
+						border-bottom-style: solid;
+						border-bottom-color: #999;
+					}
+				}
+				.neat {
+					color: #999;
+					border-bottom-width: 2rem / @base-font;
+					border-bottom-style: solid;
+					border-bottom-color: #999;
+				}
+				
+			}
+		}
+	}
+}
+/* 背景图片开始 */
+#introduction {
+	background: url(../img/img9.jpg);
+	background-repeat: no-repeat;
+	height: 280rem / @base-font;
+	width: 100%;
+	background-position: center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	// min-width: 1200px;
+	.understand{
+		a {
+			height: 20rem / @base-font;
+			width: 60rem / @base-font;
+			position: relative;
+			left: 45%;
+			top: 240rem / @base-font;
+			right: 45%;
+			font-size: 12rem / @base-font;
+			line-height: 20rem / @base-font;
+			color: #FFF;
+			text-decoration: none;
+			border: 3rem / @base-font solid #FFF;
+			border-radius: 10rem / @base-font;
+			text-align: center;
+			font-family: "微软雅黑";
+			padding-right: 10rem / @base-font;
+			padding-left: 10rem / @base-font;
+			padding-top: 5rem / @base-font;
+			padding-bottom: 5rem / @base-font;
+			&:hover{
+				color: #d6ddde;
+			}
+		}
+	}
+}
+.content{
+	width: 100%;
+	height: 2000rem / @base-font;
+	margin: 0 auto;
+}
+.tou li{
+	color: red;
+	text-align: center;
+	list-style: none;
+	margin-top: 1rem / @base-font;
+}
+.tou li{
+	font-size: 20rem / @base-font;
+	line-height: 30rem / @base-font;
+}
+.difang{
+	width: 100%;
+	height: 550rem / @base-font;
+}
+
+.difang span img{
+	width: 140rem / @base-font;
+	height: 120rem / @base-font;
+	
+}
+.difang_b{
+	width: 100%;
+	height: 100%;
+	margin-top: 10rem / @base-font;
+	
+}
+.difang_b>div{
+	display: flex;
+	margin-bottom: 5rem / @base-font;
+	
+}
+.difang_c{
+	
+	display: block;
+	width: 60%;
+	height: 120rem / @base-font;
+	margin-left: 30rem / @base-font;
+	line-height: 20rem / @base-font;
+	border-radius: 1rem / @base-font;
+	box-shadow: 1px 2px 2px  #eee;
+	font-size: 10rem / @base-font;
+}
+.difang_c span img{
+	width: 30rem / @base-font;
+	height: 30rem / @base-font;
+	position: relative;
+	left: 250rem / @base-font;
+	bottom: 20rem / @base-font;
+	cursor: pointer;
+}
+.difang_c h4:hover{
+	color: red;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.first_new{
+	width: 100%;
+	height: 550rem / @base-font;
+}
+.first_new h3{
+	height: 60rem / @base-font;
+	font-size: 20rem / @base-font;
+	line-height: 50rem / @base-font;
+	text-align: center;
+	margin-bottom: 30rem / @base-font;
+	border-bottom: 1px solid #eee;
+}
+.first_newa{
+	height: 50rem / @base-font;
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #eee;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 15rem / @base-font;
+}
+.first_newa span:first-child{
+	width: 30rem / @base-font;
+	height: 30rem / @base-font;
+	position: relative;
+	left: 20px;
+	background-color: aquamarine;
+}
+.first_newa span:nth-child(2){
+	
+	position: relative;
+	left: 40px;
+}
+.first_newa span:nth-child(2):hover{
+	color: red;
+	cursor: pointer;
+	}
+.how_shipin{
+	width: 100%;
+	height: 500rem / @base-font;
+	text-align: center;
+}
+.how_shipin h1{
+	height: 60rem / @base-font;
+	font-size: 25rem / @base-font;
+	border-bottom: 1px solid #eee;
+}
+.how_sa{
+	width: 100%;
+	height: 1400rem / @base-font;
+	margin-top: 30px;
+															background-color: #D6DDDE;
+}
+.how_sa li img{
+	width: 100%;
+	height: 100%;
+}
+.how_sa li:nth-child(3) img{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	left: 140px;
+}
+.how_sa li:nth-child(2){
+	height: 80rem / @base-font;
+	color:white;
+	}
+.how_sa li:nth-child(2):hover{
+	cursor: pointer;
+	color: #eee;
+	text-decoration: underline;
+	}
+	.genduo{
+		width: 100%;
+		height: 50rem / @base-font;
+		border: 1px solid #eee;
+		margin: auto;
+		font-size: 30rem / @base-font;
+		color: #999999;
+		line-height: 50rem / @base-font;
+	}
+	.penter{
+		width: 100%;
+		height: 1900rem / @base-font;
+		margin-top: 30px;
+		position: relative;
+		top: 1050rem / @base-font;
+		
+	}
+	.penter h1{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.renwu{
+		width: 100%;
+		height: 1800rem / @base-font;
+		margin-top: 2rem / @base-font;
+	}
+	.renwu_a{
+		width: 100%;
+		height: 450rem / @base-font;
+		position: relative;
+	}
+	.renwu_a1{
+		width: 100%;
+		height: 400rem / @base-font;
+		background: url(../img/毛相林.png);
+		background-size: 100% 100%;
+		border-radius: 15px;
+	
+	}
+	.renwu_a2{
+		width: 100%;
+		height: 400rem / @base-font;
+		background: url(../img/白晶莹.png);
+		background-size: 100% 100%;
+		border-radius: 15px;
+	}
+	.renwu_a3{
+		width: 100%;
+		height: 400rem / @base-font;
+		background: url(../img/刘虎.png);
+		background-size: 100% 100%;
+		border-radius: 15px;
+	}
+	.renwu_a4{
+		width: 100%;
+		height: 400rem / @base-font;
+		background: url(../img/李玉.png);
+		background-size: 100% 100%;
+		border-radius: 15px;
+	}
+	.renwu_c{
+	    color: #3f3f3f;
+	    text-align: center;
+	    text-shadow: 0 2px 2px #2f2f2f;
+	    letter-spacing: 5px;
+	    text-indent: 5px;
+	    width: 100%;
+	    height: 400rem / @base-font;
+	    opacity: 0;
+	    transition: 1s;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.renwu_c:hover{
+		color: #eee;
+		opacity: 1;
+		background-color: #3F3F3F;
+	}
+	.float{
+			width: 100%;
+			height: 300rem / @base-font;
+			background-color: #333333;
+			color: #FFFFFF;
+			text-align: center;
+			position: relative;
+			top: 2650rem / @base-font;
+		}
+		.wei_font{
+			width: 85%;
+			height:110rem / @base-font;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+			border-bottom:1rem / @base-font solid #d0d0d0;
+		
+		ul{
+			width: 25%;
+			height: 75rem / @base-font;
+			font-size: 6rem / @base-font;
+			li{
+				&:nth-child(1){
+					margin-top: 20rem / @base-font;
+				}
+				&:nth-child(2){
+					margin-top:10rem / @base-font;
+				}
+				&:nth-child(3){
+					margin-top:10rem / @base-font;
+				}
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+		
+	}
+	.wei_end{
+			width: 60%;
+			height: 130rem / @base-font;
+			margin: 0 auto;
+			// background-color: pink;
+			display: flex;
+		}
+	.wei_logo{
+		width: 20%;
+		// background-color: #0000ff;
+		
+		img{
+			width: 20rem / @base-font;
+			height: 20rem / @base-font;
+			// background-color: green;
+		}
+	}
+	.wei_font2{
+		font-size:3rem / @base-font;
+		width: 90%;
+		height: 130rem / @base-font;
+		// background-color: #00a6bc;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		ul{
+			height: 33%;
+			line-height: 20rem / @base-font;
+			// background-color: #ff55ff;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			    white-space: nowrap;
+		}
+	}
+	.wei_font3{
+		font-size: 5rem / @base-font;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		    white-space: nowrap;
+	}
